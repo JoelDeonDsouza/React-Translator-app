@@ -31,9 +31,9 @@ app.get("/languages", async (req, res) => {
   }
 });
 
-app.get("/translate", async (req, res) => {
+app.get("/translation", async (req, res) => {
   const { textTranslate, outputLanguage, inputLanguage } = req.query;
-  const option = {
+  const options = {
     method: "GET",
     params: {
       text: textTranslate,
@@ -48,11 +48,12 @@ app.get("/translate", async (req, res) => {
   try {
     const response = await axios(
       "https://google-translate20.p.rapidapi.com/translate",
-      option
+      options
     );
-    res.status(200).json(response.data.data.translate);
+    res.status(200).json(response.data.data.translation);
   } catch (err) {
-    console.log(error);
+    console.log(error, "error");
+    res.status(500).json({ message: err });
   }
 });
 
