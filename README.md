@@ -42,12 +42,14 @@ Install dependencies
 
 ```bash
   npm install --legacy-peer-deps
+  yarn install --legacy-peer-deps
 ```
 
 Start the server
 
 ```bash
     npm run start:backEnd
+    yarn run start:backEnd
 
 ```
 
@@ -55,6 +57,7 @@ Start the FrontEnd
 
 ```bash
   npm run start:frontEnd
+  yarn run start:frontEnd
 ```
 
 ## Features
