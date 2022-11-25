@@ -32,12 +32,6 @@ Clone the project
   git clone https://github.com/JoelDeonDsouza/React-Translator-app.git
 ```
 
-Go to the project directory
-
-```bash
-  cd React-Translator-app
-```
-
 Install dependencies
 
 ```bash
